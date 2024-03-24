@@ -1,0 +1,11 @@
+{
+  "name": "fullstack_projeto1",
+  "version": "1.0.0",
+  "description": "O Projeto 1 da disciplina Programação Web Fullstack trata-se do desenvolvimento da camada Frontend de uma aplicacão web, utilizando JavaScript e AJAX.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giovanna Dias Ferreira",
+  "license": "ISC"
+}
