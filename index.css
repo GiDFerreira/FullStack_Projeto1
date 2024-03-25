@@ -1,5 +1,6 @@
 body{
     background-color: #82B8D9;
+    font-size: 34px;
     font-family: 'Chewy';
     margin: 0;
 }
@@ -23,14 +24,14 @@ body{
     margin-top: 20px;
 }
 
-.searchContainer, #inputSearch{
+.searchContainer, #disneyCharacter{
     padding: 10px;
     width: 300px;
     border: 2px solid #ccc;
     border-radius: 5px;
     outline: none;
     font-size: 16px;
-    margin-left: 55rem;
+    margin-left: 45rem;
 }
 
 .searchContainer, #bottom{
@@ -50,3 +51,11 @@ body{
 .searchContainer, #bottom:hover {
     background-color: #F2BBC5;
 }
+
+.charactersContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 35rem); /* Três colunas iguais */
+    gap: 12px; /* Espaçamento entre os cards */
+
+}
+  
