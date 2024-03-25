@@ -11,16 +11,12 @@
     <div id="One"><h1 class="titleOne">Pesquise sobre seu personagem favorito</h1></div>
     
     <div id="searchContainer">
-        <input type="text" id="inputSearch" placeholder="Digite sua busca...">
-        <button id="bottom"  onclick="searchCharacter()">Buscar</button>
+        <input type="text" id="disneyCharacter" placeholder="Digite sua busca...">
+        <button id="bottom" onclick="fetchData()">Buscar</button><br>
     </div>
     
-    <div id="resultado">
-        <p id="nomePersonagem"></p>
-        <p id="tvShows"></p>
-    </div>
+    <div id="charactersContainer"></div>
 
     <script src="dataAPI.js"></script>
-    <script src="search.js"></script>
 </body>
 </html>
