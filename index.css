@@ -31,7 +31,7 @@ body{
     border-radius: 5px;
     outline: none;
     font-size: 16px;
-    margin-left: 45rem;
+    margin-left: 30rem;
 }
 
 .searchContainer, #bottom{
@@ -52,10 +52,41 @@ body{
     background-color: #F2BBC5;
 }
 
-.charactersContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 35rem); /* Três colunas iguais */
-    gap: 12px; /* Espaçamento entre os cards */
-
+.character {
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #A64E6E;
+    width: 20rem;
+    margin: 10px;
+    vertical-align: top;
 }
+
+.character img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 5px;
+    padding: 2px 2px 2px 2px;
+    margin-left: 15px;
+}
+
+.character h3 {
+    margin-top: 0;
+    padding: 2px 2px 2px 2px;
+}
+
+.character ul {
+    list-style-type: none;
+    padding: 2px 2px 2px 2px;
+    font-size: 20px;
+}
+
+.character ul li {
+    margin-bottom: 5px;
+    padding: 2px 2px 2px 2px;
+    font-size: 20px;
+}
+
   
