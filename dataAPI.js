@@ -8,9 +8,7 @@ async function fetchData() {
         }
 
         const data = await response.json();
-        const characters = data.data;
-
-        const filteredCharacters = characters.filter(character => character.name.toLowerCase());
+        const filteredCharacters = data.data;
 
         const charactersContainer = document.getElementById("charactersContainer");
         charactersContainer.innerHTML = "";
