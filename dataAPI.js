@@ -1,6 +1,15 @@
 async function fetchData() {
     try {
-        const disneyCharacter = document.getElementById("disneyCharacter").value.toLowerCase();
+        const disneyCharacter = document.getElementById("disneyCharacter").value.trim().toLowerCase();
+        
+        const errorMessageElement = document.getElementById("errorMessage");
+        errorMessageElement.textContent = "";
+
+        if (disneyCharacter.length < 1 || disneyCharacter.length > 25) {
+            errorMessageElement.textContent = "O nome do personagem deve ter entre 1 e 25 caracteres.";
+            return;        
+        }
+
         const response = await fetch(`https://api.disneyapi.dev/character?name=${disneyCharacter}`);
 
         if (!response.ok) {
